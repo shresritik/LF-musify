@@ -64,6 +64,7 @@ img {
   transform: translateX(-50%);
   width: 90%;
   margin: auto;
+  z-index: 100;
 }
 .navbar__logo-wrapper {
   width: 8rem;
@@ -89,7 +90,7 @@ img {
   margin: 0px 20px;
   cursor: pointer;
 }
-.navbar__active {
+.navbar--active {
   border-bottom: 2px solid $primary_color;
 }
 .navbar__right {
@@ -114,7 +115,7 @@ img {
 }
 .btn__secondary {
   color: $primary_color;
-  padding: 12px 1.2rem;
+  padding: 15px 1.2rem;
   background-color: initial;
 }
 .btn {
@@ -129,7 +130,6 @@ img {
 }
 .main {
   position: relative;
-  z-index: -100;
 }
 .main__buttons {
   @include utils.flexBox(start, center);
@@ -149,7 +149,6 @@ img {
   padding: 0px 7.875rem;
   top: -40px;
   position: relative;
-  z-index: -20;
   &__left {
     margin-bottom: 2rem;
   }
@@ -218,6 +217,7 @@ img {
   border: 1px solid white;
   border-radius: 15px;
   width: 19rem;
+  z-index: 99;
 }
 .main__card {
   @include utils.flexBox(center, start);
@@ -235,7 +235,7 @@ img {
   width: 100%;
   text-align: center;
   font-size: 4rem;
-  margin-bottom: 4.292rem;
+  margin-top: 4.875rem;
 }
 .popular {
   background: #282828;
@@ -246,6 +246,7 @@ img {
   padding-bottom: 1.75rem;
   @include utils.flexBox(start, start);
   flex-direction: column;
+  margin: 20px;
 }
 .card__details {
   color: white;
@@ -268,7 +269,7 @@ img {
 .card-section__row {
   width: 100%;
   @include utils.flexBox(start, center);
-  gap: 7.75rem;
+  // gap: 7.75rem;
 }
 .musify {
   margin: 9.188rem 7.875rem;

@@ -70,6 +70,7 @@ img {
   transform: translateX(-50%);
   width: 90%;
   margin: auto;
+  z-index: 100;
 }
 
 .navbar__logo-wrapper {
@@ -103,7 +104,7 @@ img {
   cursor: pointer;
 }
 
-.navbar__active {
+.navbar--active {
   border-bottom: 2px solid #F14A16;
 }
 
@@ -133,7 +134,7 @@ img {
 
 .btn__secondary {
   color: #F14A16;
-  padding: 12px 1.2rem;
+  padding: 15px 1.2rem;
   background-color: initial;
 }
 
@@ -152,7 +153,6 @@ img {
 
 .main {
   position: relative;
-  z-index: -100;
 }
 
 .main__buttons {
@@ -179,7 +179,6 @@ img {
   padding: 0px 7.875rem;
   top: -40px;
   position: relative;
-  z-index: -20;
 }
 .main-section__left {
   margin-bottom: 2rem;
@@ -255,6 +254,7 @@ img {
   border: 1px solid white;
   border-radius: 15px;
   width: 19rem;
+  z-index: 99;
 }
 
 .main__card {
@@ -280,7 +280,7 @@ img {
   width: 100%;
   text-align: center;
   font-size: 4rem;
-  margin-bottom: 4.292rem;
+  margin-top: 4.875rem;
 }
 
 .popular {
@@ -295,6 +295,7 @@ img {
   justify-content: start;
   align-items: start;
   flex-direction: column;
+  margin: 20px;
 }
 
 .card__details {
@@ -324,7 +325,6 @@ img {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 7.75rem;
 }
 
 .musify {
