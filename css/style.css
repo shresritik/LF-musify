@@ -6,11 +6,50 @@
 body {
   position: relative;
   font-family: "Proxima Nova Regular", sans-serif;
+  transition: all 0.5s ease-out;
+}
+
+.body--dark {
+  background-color: #070606;
+  transition: all 0.5s ease-in;
 }
 
 img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.navbar--dark::after {
+  content: "";
+  background: #370665;
+  filter: blur(400px);
+  position: absolute;
+  right: 0;
+  height: 56.5rem;
+  width: 56.5rem;
+  top: 10px;
+  z-index: -100;
+  transition: all 0.5s ease-in;
+}
+
+.main--dark::before {
+  content: "";
+  background-color: #35589a;
+  filter: blur(400px);
+  position: absolute;
+  left: 0;
+  height: 56.5rem;
+  width: 56.5rem;
+  bottom: 20px;
+  z-index: 0;
+  transition: all 0.5s ease-in;
+  color: white;
+}
+
+.text-color--dark {
+  position: relative;
+  color: white !important;
+  z-index: 1000;
 }
 
 .navbar__checkbox-label {
@@ -112,6 +151,7 @@ img {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
+  align-items: center;
 }
 
 .navbar__images {
@@ -124,6 +164,12 @@ img {
 
 .navbar__toggle {
   margin-right: 4rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.img-filter--dark {
+  filter: invert(100%) sepia(97%) saturate(13%) hue-rotate(237deg) brightness(104%) contrast(104%);
 }
 
 .btn__primary {
