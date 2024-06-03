@@ -39,6 +39,7 @@ body {
 
 .body--dark {
   background-color: #070606;
+  color: white;
   transition: all 0.5s ease-in;
 }
 
@@ -46,23 +47,23 @@ img {
   object-fit: contain;
 }
 
-.navbar--dark::after {
+.body--dark .navbar--dark::after {
   content: "";
   background: #370665;
-  filter: blur(400px);
+  filter: blur(300px);
   position: absolute;
   right: 0;
   height: 56.5rem;
   width: 56.5rem;
   top: 10px;
-  z-index: -100;
+  z-index: -10;
   transition: all 0.5s ease-in;
 }
 
-.main--dark::before {
+.body--dark .main--dark::before {
   content: "";
   background-color: #35589a;
-  filter: blur(400px);
+  filter: blur(250px);
   position: absolute;
   left: 0;
   height: 56.5rem;
@@ -71,9 +72,11 @@ img {
   z-index: 0;
   transition: all 0.5s ease-in;
   color: white;
+  border-radius: 56.5rem;
+  filter: blur(250px);
 }
 
-.text-color--dark {
+.body--dark .text-color--dark {
   position: relative;
   color: white !important;
   z-index: 1000;
@@ -195,7 +198,7 @@ img {
   z-index: 1000;
 }
 
-.img-filter--dark {
+.body--dark .img-filter--dark {
   filter: invert(100%) sepia(97%) saturate(13%) hue-rotate(237deg) brightness(104%) contrast(104%);
 }
 
@@ -276,6 +279,7 @@ img {
 .main__img-wrapper {
   /* position: relative; */
   position: relative;
+  z-index: -99;
 }
 .main__img-wrapper > img {
   object-fit: cover;
@@ -392,6 +396,10 @@ img {
   width: 23.6rem;
 }
 
+.body--dark .popular--dark {
+  background: linear-gradient(164deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100.82%);
+}
+
 .card {
   border-radius: 48px;
   padding-bottom: 1.75rem;
@@ -430,14 +438,6 @@ img {
   overflow: auto;
   gap: 7.75rem;
   padding: 6.44rem 8.06rem 3rem 8.06rem;
-}
-
-.scan-section__qr-img {
-  margin: auto;
-  width: 12rem;
-}
-.scan-section__qr-img > img {
-  width: 100%;
 }
 
 .musify {
@@ -584,6 +584,7 @@ img {
 
 .arrivals {
   width: 31.313rem;
+  border: 5px solid #35589a;
   background-color: #370665;
 }
 
@@ -957,6 +958,28 @@ img {
   }
   .footer--sm .footer__header {
     margin-bottom: 30px;
+  }
+  .scan-section__qr-img {
+    margin: auto;
+    width: 12rem;
+  }
+  .scan-section__qr-img > img {
+    width: 100%;
+  }
+  .body--dark .main--dark::before {
+    content: "";
+    background-color: #35589a;
+    filter: blur(250px);
+    position: absolute;
+    left: 0;
+    height: 56.5rem;
+    width: 100%;
+    bottom: 20px;
+    z-index: 0;
+    transition: all 0.5s ease-in;
+    color: white;
+    border-radius: 56.5rem;
+    filter: blur(250px);
   }
 }
 
