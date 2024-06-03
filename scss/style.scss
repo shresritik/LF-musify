@@ -1,5 +1,6 @@
 @use "utils";
-@import "config";
+@import "config/config";
+@import "config/base";
 * {
   margin: 0px;
   padding: 0px;
@@ -7,9 +8,8 @@
 
 body {
   position: relative;
-  font-family: "Proxima Nova Regular", sans-serif;
-
   transition: all 0.5s ease-out;
+  overflow-x: hidden;
 }
 .body--dark {
   background-color: #070606;
@@ -95,15 +95,7 @@ img {
   position: absolute;
   top: -2px;
 }
-.header {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  margin: auto;
-  z-index: 100;
-}
+
 .navbar__logo-wrapper {
   width: 8rem;
 }
@@ -111,17 +103,19 @@ img {
   width: 100%;
 }
 .navbar {
-  @include utils.flexBox(space-between, center);
-  margin: auto;
+  @include utils.flexBox(space-around, center);
+}
+.card__img-wrapper {
+  min-width: 23.5rem;
+  border-radius: 48px 48px 0 0;
+  overflow: hidden;
+  height: 20.6875rem;
 }
 .navbar__menu {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  margin: auto;
-  width: 100%;
 }
 .navbar__menu__text {
   font-size: 1.5rem;
@@ -228,6 +222,8 @@ img {
 
 .card-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main__card--active {
@@ -244,33 +240,34 @@ img {
   font-size: 1.5rem;
 }
 .main__card-img-wrapper {
-  width: 6.25rem;
-  position: absolute;
-  top: -4.3rem;
   z-index: 100;
+  .card-img {
+    margin-bottom: -103px;
+  }
 }
 .main__card-section {
+  border-radius: 15px;
+  z-index: 99;
+  max-width: 21.875rem;
+  border-radius: 1.5625rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
   background: linear-gradient(
-    116.15deg,
+    116deg,
     rgba(192, 192, 192, 0.63) -10.88%,
     rgba(255, 255, 255, 0.49) -10.87%,
     rgba(255, 255, 255, 0.07) 74.79%
   );
-  padding: 4rem 2rem 2rem 1.5rem;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  border: 1px solid white;
-  border-radius: 15px;
-  width: 19rem;
-  z-index: 99;
+  padding: 5.81rem 5.94rem 2.94rem 0.94rem;
+  backdrop-filter: blur(15px);
 }
 .main__card {
-  @include utils.flexBox(center, start);
+  @include utils.flexBox(center, center);
+  flex-direction: column;
 }
 .main-section__right {
   @include utils.flexBox(start, start);
-  gap: 30px;
-  width: 50%;
+  gap: 2.5rem;
+  overflow: auto;
 }
 .section {
   padding: 4.875rem 0rem 7.875rem 4.875rem;
@@ -291,7 +288,6 @@ img {
   padding-bottom: 1.75rem;
   @include utils.flexBox(start, start);
   flex-direction: column;
-  margin: 20px;
 }
 .card__details {
   color: white;
@@ -312,9 +308,10 @@ img {
   font-size: 1rem;
 }
 .card-section__row {
-  width: 100%;
   @include utils.flexBox(start, center);
-  // gap: 7.75rem;
+  overflow: auto;
+  gap: 7.75rem;
+  padding: 6.44rem 8.06rem 3rem 8.06rem;
 }
 .musify {
   margin: 9.188rem 7.875rem;
