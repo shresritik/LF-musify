@@ -1,0 +1,29 @@
+.btn__primary {
+  background-color: $primary_color;
+  color: white;
+  padding: 1rem 2.4rem;
+}
+.btn__secondary {
+  color: $primary_color;
+  padding: 15px 1.2rem;
+  background-color: initial;
+}
+.btn {
+  border: 2px solid $primary_color;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  box-shadow: 2px 4px 18px 0px #f14a1640;
+  cursor: pointer;
+  @include utils.flexBox(center, center);
+  gap: 10px;
+}
+
+.buttons-section {
+  @include utils.flexBox(start, center);
+  gap: 10px;
+  padding-top: 20px;
+}
+.btn__small {
+  font-size: 1rem;
+}
