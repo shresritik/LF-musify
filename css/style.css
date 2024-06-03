@@ -245,11 +245,19 @@ img {
   filter: invert(29%) sepia(87%) saturate(1903%) hue-rotate(356deg) brightness(101%) contrast(89%);
 }
 
+.main__card--active {
+  margin-right: 1.06rem;
+}
+
+.exclusive-section__left {
+  width: 40%;
+}
+
 .main-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: -40px;
+  top: -60px;
   width: 100%;
   position: relative;
 }
@@ -267,7 +275,6 @@ img {
 
 .main__img-wrapper {
   /* position: relative; */
-  width: 60%;
   position: relative;
 }
 .main__img-wrapper > img {
@@ -342,6 +349,16 @@ img {
   backdrop-filter: blur(15px);
 }
 
+.main-section__left {
+  padding-left: 5.062rem;
+  width: 50%;
+}
+
+.main__header {
+  line-height: 6.25rem;
+  width: 100%;
+}
+
 .main__card {
   display: flex;
   justify-content: center;
@@ -355,6 +372,7 @@ img {
   align-items: start;
   gap: 2.5rem;
   overflow: auto;
+  padding: 20px;
 }
 
 .section {
@@ -414,8 +432,19 @@ img {
   padding: 6.44rem 8.06rem 3rem 8.06rem;
 }
 
+.scan-section__qr-img {
+  margin: auto;
+  width: 12rem;
+}
+.scan-section__qr-img > img {
+  width: 100%;
+}
+
 .musify {
-  margin: 9.188rem 7.875rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 6.06rem;
+  margin-bottom: 6.06rem;
   color: white;
   background: linear-gradient(91.42deg, #370665 0%, #35589a 100%);
   border-radius: 25px;
@@ -460,8 +489,8 @@ img {
   background-color: #370665;
   color: white;
   border-radius: 100%;
-  width: 22%;
   height: 10.375rem;
+  padding: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -668,7 +697,10 @@ img {
 }
 
 .country {
-  width: 46%;
+  position: relative;
+  width: 143px;
+  display: flex;
+  left: 147px;
 }
 
 .footer__right {
@@ -696,15 +728,34 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+.exclusive-section--sm,
+.footer--sm {
+  display: none;
+}
+
+.exclusive-section--lg,
+.footer--lg {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
   .main__img-wrapper {
     display: none;
   }
   .main-section {
     position: static;
   }
+  .main-section__left {
+    text-align: center;
+  }
   .footer {
     flex-direction: column;
+  }
+  .footer__content {
+    margin-bottom: 2.25rem;
+  }
+  .footer__header, .footer__desc {
+    font-size: 1.5rem;
   }
   .footer__top {
     flex-direction: column;
@@ -751,6 +802,7 @@ img {
     letter-spacing: 0.14rem;
   }
   .main-section__left {
+    width: 100%;
     margin-bottom: 5rem;
   }
   .btn {
@@ -785,6 +837,7 @@ img {
     width: 100%;
     margin: auto;
     position: relative;
+    bottom: 20px;
   }
   .search-field {
     border-radius: 1.875rem;
@@ -808,7 +861,11 @@ img {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    overflow: auto;
+  }
+  .main-section__left {
+    padding-left: 2rem;
+    position: relative;
+    top: 3.5rem;
   }
   .main-section__right {
     width: 90%;
@@ -829,13 +886,14 @@ img {
     gap: 0px;
   }
   .musify__header {
-    padding: 3rem 1.87rem;
+    font-size: 1.5rem;
   }
   .musify__container {
     width: 60%;
   }
   .musify__container > p {
     width: 100%;
+    font-size: 1.25rem;
   }
   .exclusive-section__left {
     flex-direction: column-reverse;
@@ -843,7 +901,7 @@ img {
   }
   .exclusive-section__left-offer {
     width: 7rem;
-    height: auto;
+    height: 7rem;
     padding: 19px;
   }
   .accessories-section__products {
@@ -862,6 +920,43 @@ img {
   }
   .footer__right {
     align-items: start;
+  }
+  .scan-section__header {
+    font-size: 1.75rem;
+  }
+  .scan-section__desc {
+    font-size: 1.625rem;
+  }
+  .section-header {
+    font-size: 2.875rem;
+  }
+  .accessories-section {
+    margin-top: 4.7rem;
+  }
+  .accessories-section__header {
+    font-size: 2rem;
+    margin-bottom: 2.69rem;
+  }
+  .exclusive-section__header {
+    font-size: 2.75rem;
+  }
+  .exclusive-section--lg,
+  .footer--lg {
+    display: none;
+  }
+  .exclusive-section--sm,
+  .footer--sm {
+    display: flex;
+    gap: 3.38rem;
+  }
+  .exclusive-section__content {
+    padding: 0rem 0 0 0;
+  }
+  .exclusive-section__left-offer {
+    font-size: 1.87rem;
+  }
+  .footer--sm .footer__header {
+    margin-bottom: 30px;
   }
 }
 
