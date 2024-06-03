@@ -35,7 +35,6 @@ h1 {
 body {
   position: relative;
   transition: all 0.5s ease-out;
-  overflow-x: hidden;
 }
 
 .body--dark {
@@ -138,10 +137,18 @@ img {
   width: 100%;
 }
 
+.navbar__space {
+  display: flex;
+  justify-content: space-between;
+  width: 62%;
+  /* flex: 50%; */
+}
+
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 15px 25px;
 }
 
 .card__img-wrapper {
@@ -184,7 +191,6 @@ img {
 }
 
 .navbar__toggle {
-  margin-right: 4rem;
   position: relative;
   z-index: 1000;
 }
@@ -243,17 +249,29 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 7.875rem;
   top: -40px;
+  width: 100%;
   position: relative;
 }
 .main-section__left {
   margin-bottom: 2rem;
 }
 
+.footer__img {
+  margin: auto;
+  width: 17rem;
+}
+.footer__img > img {
+  width: 100%;
+}
+
 .main__img-wrapper {
+  /* position: relative; */
+  width: 60%;
   position: relative;
-  width: 60rem;
+}
+.main__img-wrapper > img {
+  object-fit: cover;
 }
 
 img {
@@ -671,6 +689,180 @@ img {
 .footer__bottom {
   margin-top: 5.341rem;
   margin-bottom: 1.188rem;
+}
+
+.search-container,
+.navbar__burger {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .main__img-wrapper {
+    display: none;
+  }
+  .main-section {
+    position: static;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__left {
+    flex-direction: column;
+  }
+  .footer__left-top {
+    flex-direction: column;
+  }
+  .footer__newsletter {
+    flex-direction: column;
+  }
+  .footer__newsletter-form {
+    flex-direction: column;
+  }
+  .main__desc {
+    font-size: 1.125rem;
+  }
+  .country {
+    width: 100%;
+  }
+  .musify__section {
+    flex-direction: column;
+  }
+  .main-section {
+    text-align: center;
+  }
+  .main__buttons {
+    justify-content: center;
+  }
+  .card-section__row {
+    padding: 3.75rem 2.5rem;
+    gap: 1.87rem;
+  }
+  .main__card-section {
+    width: 63%;
+  }
+  .main__header {
+    color: #000;
+    font-size: 3.5rem;
+    width: 100%;
+    line-height: 3.75rem; /* 107.143% */
+    letter-spacing: 0.14rem;
+  }
+  .main-section__left {
+    margin-bottom: 5rem;
+  }
+  .btn {
+    font-size: 1.0625rem;
+  }
+  .navbar__menu,
+  .search,
+  .login {
+    display: none;
+  }
+  .navbar__burger {
+    display: block;
+    width: 23%;
+  }
+  .navbar__space {
+    width: auto;
+  }
+  .navbar {
+    padding: 1.25rem;
+  }
+  .navbar__toggle {
+    margin-right: 0;
+  }
+  .scan-section {
+    flex-direction: column;
+  }
+  .exclusive-section {
+    flex-direction: column;
+  }
+  .search-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  .search-field {
+    border-radius: 1.875rem;
+    border: 2px solid #e5e5e5;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 0.64rem 2.29rem;
+    width: 80%;
+    color: #858585;
+    outline: none;
+  }
+  .header {
+    padding: 1.25rem;
+  }
+  .search-label {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+  }
+  .main__footer {
+    position: relative;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
+  .main-section__right {
+    width: 90%;
+    padding-left: 1.69rem;
+    padding-right: 1.69rem;
+  }
+  .main__card-section {
+    border-radius: 1.5625rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(40, 40, 40, 0.7);
+    color: white;
+    backdrop-filter: blur(15px);
+  }
+  .musify {
+    margin: 3rem;
+  }
+  .musify__section {
+    gap: 0px;
+  }
+  .musify__header {
+    padding: 3rem 1.87rem;
+  }
+  .musify__container {
+    width: 60%;
+  }
+  .musify__container > p {
+    width: 100%;
+  }
+  .exclusive-section__left {
+    flex-direction: column-reverse;
+    width: 70%;
+  }
+  .exclusive-section__left-offer {
+    width: 7rem;
+    height: auto;
+    padding: 19px;
+  }
+  .accessories-section__products {
+    width: 87%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .scan-section__right {
+    padding: 2.5rem;
+    text-align: center;
+  }
+  .scan-section__btns {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .footer__right {
+    align-items: start;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,168 +9,235 @@
   <body>
     <header class="header">
       <nav class="navbar">
+        <figure class="navbar__burger">
+          <img src="../images/icons/hamburger.svg" />
+        </figure>
         <figure class="navbar__logo-wrapper">
           <img src="./images/utils/Logo.png" class="navbar__logo" />
         </figure>
-        <ul class="navbar__menu">
-          <li class="navbar__menu__text navbar--active">Home</li>
-          <li class="navbar__menu__text">Explore</li>
-          <li class="navbar__menu__text">Contact Us</li>
-        </ul>
+        <div class="navbar__space">
+          <ul class="navbar__menu">
+            <li class="navbar__menu__text navbar--active">Home</li>
+            <li class="navbar__menu__text">Explore</li>
+            <li class="navbar__menu__text">Contact Us</li>
+          </ul>
+          <div class="navbar__right">
+            <div class="navbar__toggle">
+              <input id="navbar__checkbox" type="checkbox" />
+              <label class="navbar__checkbox-label" for="navbar__checkbox">
+                <svg
+                  class="sun"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="5.6875"
+                    y="5.6875"
+                    width="14.625"
+                    height="14.625"
+                    rx="7.3125"
+                    fill="#F9FE1F"
+                  />
+                  <line
+                    x1="13.5"
+                    y1="0.5"
+                    x2="13.5"
+                    y2="4.375"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="13.5"
+                    y1="21.625"
+                    x2="13.5"
+                    y2="25.5"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="0.5"
+                    y1="13.3125"
+                    x2="4.375"
+                    y2="13.3125"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="21.625"
+                    y1="12.5"
+                    x2="25.5"
+                    y2="12.5"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="19.5"
+                    y1="6.80241"
+                    x2="22.24"
+                    y2="4.06238"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="3.14461"
+                    y1="4.0625"
+                    x2="5.88465"
+                    y2="6.80254"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="3.25"
+                    y1="21.4274"
+                    x2="5.99004"
+                    y2="18.6874"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="21.0196"
+                    y1="18.6875"
+                    x2="23.7596"
+                    y2="21.4275"
+                    stroke="#B9B9B9"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <svg
+                  class="moon"
+                  width="44"
+                  height="45"
+                  viewBox="0 0 44 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_3_1889)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.3035 10.8126C14.4561 13.5054 13.9212 17.032 15.1799 20.3112L15.3941 20.8691C17.4268 26.1645 23.3674 28.8094 28.6629 26.7767C29.0985 26.6095 29.5162 26.4158 29.9148 26.1982C28.779 27.854 27.147 29.1944 25.1307 29.9684C19.8353 32.0011 13.8947 29.3562 11.862 24.0608L11.6478 23.5029C9.78232 18.6431 11.8565 13.2399 16.3035 10.8126Z"
+                      fill="#FFD914"
+                    />
+                    <path
+                      d="M22 16L22.6735 18.0729L24.8532 18.0729L23.0898 19.3541L23.7634 21.4271L22 20.1459L20.2366 21.4271L20.9102 19.3541L19.1468 18.0729L21.3265 18.0729L22 16Z"
+                      fill="#FFD914"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_3_1889"
+                      x="0.962891"
+                      y="0.8125"
+                      width="42.9521"
+                      height="43.8408"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="2" dy="2" />
+                      <feGaussianBlur stdDeviation="6" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_3_1889"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_3_1889"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </label>
+            </div>
 
-        <div class="navbar__right">
-          <div class="navbar__toggle">
-            <input id="navbar__checkbox" type="checkbox" />
-            <label class="navbar__checkbox-label" for="navbar__checkbox">
-              <svg
-                class="sun"
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="5.6875"
-                  y="5.6875"
-                  width="14.625"
-                  height="14.625"
-                  rx="7.3125"
-                  fill="#F9FE1F"
-                />
-                <line
-                  x1="13.5"
-                  y1="0.5"
-                  x2="13.5"
-                  y2="4.375"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="13.5"
-                  y1="21.625"
-                  x2="13.5"
-                  y2="25.5"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="0.5"
-                  y1="13.3125"
-                  x2="4.375"
-                  y2="13.3125"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="21.625"
-                  y1="12.5"
-                  x2="25.5"
-                  y2="12.5"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="19.5"
-                  y1="6.80241"
-                  x2="22.24"
-                  y2="4.06238"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="3.14461"
-                  y1="4.0625"
-                  x2="5.88465"
-                  y2="6.80254"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="3.25"
-                  y1="21.4274"
-                  x2="5.99004"
-                  y2="18.6874"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="21.0196"
-                  y1="18.6875"
-                  x2="23.7596"
-                  y2="21.4275"
-                  stroke="#B9B9B9"
-                  stroke-linecap="round"
-                />
-              </svg>
-              <svg
-                class="moon"
-                width="44"
-                height="45"
-                viewBox="0 0 44 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g filter="url(#filter0_d_3_1889)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16.3035 10.8126C14.4561 13.5054 13.9212 17.032 15.1799 20.3112L15.3941 20.8691C17.4268 26.1645 23.3674 28.8094 28.6629 26.7767C29.0985 26.6095 29.5162 26.4158 29.9148 26.1982C28.779 27.854 27.147 29.1944 25.1307 29.9684C19.8353 32.0011 13.8947 29.3562 11.862 24.0608L11.6478 23.5029C9.78232 18.6431 11.8565 13.2399 16.3035 10.8126Z"
-                    fill="#FFD914"
-                  />
-                  <path
-                    d="M22 16L22.6735 18.0729L24.8532 18.0729L23.0898 19.3541L23.7634 21.4271L22 20.1459L20.2366 21.4271L20.9102 19.3541L19.1468 18.0729L21.3265 18.0729L22 16Z"
-                    fill="#FFD914"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="filter0_d_3_1889"
-                    x="0.962891"
-                    y="0.8125"
-                    width="42.9521"
-                    height="43.8408"
-                    filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
-                  >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix
-                      in="SourceAlpha"
-                      type="matrix"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"
-                    />
-                    <feOffset dx="2" dy="2" />
-                    <feGaussianBlur stdDeviation="6" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix
-                      type="matrix"
-                      values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
-                    />
-                    <feBlend
-                      mode="normal"
-                      in2="BackgroundImageFix"
-                      result="effect1_dropShadow_3_1889"
-                    />
-                    <feBlend
-                      mode="normal"
-                      in="SourceGraphic"
-                      in2="effect1_dropShadow_3_1889"
-                      result="shape"
-                    />
-                  </filter>
-                </defs>
-              </svg>
-            </label>
+            <figure class="navbar__images">
+              <img class="search" src="./images/icons/Search.png" />
+              <img class="cart" src="./images/icons/Cart.png" />
+            </figure>
+            <button type="button" class="login btn btn__secondary">
+              Login
+            </button>
           </div>
-
-          <figure class="navbar__images">
-            <img src="./images/icons/Search.png" />
-            <img src="./images/icons/Cart.png" />
-          </figure>
-          <button type="button" class="btn btn__secondary">Login</button>
         </div>
       </nav>
+      <div class="search-container">
+        <label class="search-label" for="searchId">
+          <svg
+            width="22"
+            height="21"
+            viewBox="0 0 22 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask
+              id="mask0_3_3077"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="22"
+              height="21"
+            >
+              <rect
+                x="0.746094"
+                y="0.074707"
+                width="20.4179"
+                height="20.4179"
+                fill="url(#pattern0_3_3077)"
+              />
+            </mask>
+            <g mask="url(#mask0_3_3077)">
+              <rect
+                x="0.746094"
+                y="0.074707"
+                width="20.191"
+                height="20.191"
+                fill="#858585"
+              />
+            </g>
+            <defs>
+              <pattern
+                id="pattern0_3_3077"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use xlink:href="#image0_3_3077" transform="scale(0.0111111)" />
+              </pattern>
+              <image
+                id="image0_3_3077"
+                width="90"
+                height="90"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFZElEQVR4nO2c32tcRRTHPwl0YzYbsda28VHQRrBYqFWrplRBIojij2f9DxLbP0FEUB+0baKvRSoiBlQqtAYp/gj+aCu+aWNBCtaoMdFWbK1NiokP525Zk3tmJ7v33jN3nQ/My3R75zsns+eeOXNmIRKJRCKRSCQSiUQCpct4/D5gCNgODAK3AhuB9cm/AfwFnAfmgNNJ+xr4DLhUsN5SsQnYC0wBC8Byi20hecae5JmRhF3AYeAKrRtXa4vJs4cKm02A7AY+JXvjau0T5I/6v2EAOAQsUZyRG9sEsDn3WRrzJHAOGwM3tnPA4znP1YQKcIC1reKfgTeBUWAYuBmJOtYlbX3SNww8k3z2lzU8fwnYlzyrI6gBH+I3+TlgP3BHG+PtQP6o855jTiYaS80G4CTNJ/sDMAL0Zjh2L/JtOOsx/olEaympAl/gnuAisvryXFG9wLPA5SZaTuasIxcqNHcX3wK3FahpK3CqiaZJSuazD+Ce0FvIii+aPiS8c2l7xUBXSzyKO7p4Feg2Uyd5nJdTdDVGI0+YqfNkAHecPGYnbRXj6Dp/J/A8yRu43YXlSl5JN2438rqdNDe70V3GN9j45GbUgGl0FxJkMkpLEF2m2OhirdyOnpb9yFBXKvegfwWfM9Tlywvo+oNa1YfRd3xZ7vbyog+YIX0O7xnq+g+bkB1emsgRQ11rZS/67nWjoa6raALnKMdqrlNFT0SNGuq6yhTp4vZbimqRMdLn8rGlKBDfpr2xtxvqapU70SMn02/ncIqoZSRpX0a6gFnS5/RgHgP67uB2KP3BxZ+euNxEO4cRKr6G3qL0n8hKiAHHlf7BPAbzNbQ2+OmshBigaTc19IDS/31WQgzQtN+Yx2C+hr5W6f8jKyEGnFf6+wtVsQIttKtYimqTCnqIlzkh5Y2LRqukzaXC1tfQF5X+0p0mN6C5CG2ubeFr6D+V/uuyEmKApt3U0LNK/y1ZCTFA0/5jHoP5GrrQmLMgNO1n8hisXUPvzEqIAZr26UJVrOAh0kOhWezvwbSCK6l0v6EuquixtJZwCpm70U9Z+hz/r2V8Xccl9ATS0xlpKZKnlP4p5BaYKXvQj7JCrOXQqAK/EfDZp+twNoizNk9ch7O5JJRaQSs3OEs5VnUf8BPpc3jbUNcqhtALUJ431OXLi+j6gyqgAbnHp2W9thrqasY29MjpmKEulV3oRY6nyCk8apN+4DvSNS8R8MbrEPpXcIKw0q/dwDvoeoMt2wW5keoqRB+3k7aK19B1zgM32Enz4xHKf7WiNLdq96FPpO5GLA4H+nG7i2VKdFkI5ArZJO4JTSNF4EWxDf3F19iOAD0F6mqbKvA57knVL3TmecJcxe9CZ2ObBK7JUVPmbECSTs0mNoPkTLLcRVaRbbW24+u4lV2juRtpfNuPAXfRWj67C0l1jqMniIIydtZJ+3XAS8gK8332r0jB4XHkJOcM8oeopytrSCX+TciPW+0EHsD/fuAyUsM9CDzs+NxR5HdGFjyfGwSPIZcl211p7bb5RAvIij3S5POlcyMA1yMvwH+wMfIEq++kVNAzkKV9QdYZQuqoizLwMdy5i45d2XXuRa6YaYcH7bRFJJ/sm+rseGOD5BZGkRfgWmLele0KsnpHaO1kpFBjW5cK9AL3ISfpW5CoYjNSrlVD9F1EStJmkIhkGvgS+Ir2D1J7gHdxRyMfID83UapoJEQ6+gUZGtHYBVIB3icauxCisQskGrtAorELpAdJNLmMfZSSb2pCwcfYZfx1hyBpZuwL2G/8OgaXsf8mrDqW0qMZ+6ClqE6lB/HJF5CVfJBy37UMni6iX45EIpFIJBKJRHLnXzaI/LMc2U2HAAAAAElFTkSuQmCC"
+              />
+            </defs>
+          </svg>
+        </label>
+        <input
+          id="searchId"
+          type="text"
+          placeholder="Search"
+          class="search-field"
+        />
+      </div>
     </header>
     <!-- dive in Music -->
     <main class="main">
