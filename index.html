@@ -7,24 +7,29 @@
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
+    <header>
+      <!-- navbar -->
       <nav class="navbar navbar--dark">
+        <!-- hamburger -->
         <figure class="navbar__burger">
           <img src="../images/icons/hamburger.svg" class="img-filter--dark" />
         </figure>
+        <!-- Logo -->
         <figure class="navbar__logo-wrapper">
           <img src="./images/utils/Logo.png" class="navbar__logo" />
         </figure>
+        <!-- menu -->
         <div class="navbar__space">
           <ul class="navbar__menu">
-            <li class="navbar__menu__text navbar--active">Home</li>
-            <li class="navbar__menu__text">Explore</li>
-            <li class="navbar__menu__text">Contact Us</li>
+            <li class="navbar__menu-text navbar__menu--active">Home</li>
+            <li class="navbar__menu-text">Explore</li>
+            <li class="navbar__menu-text">Contact Us</li>
           </ul>
+          <!-- nav-icons -->
           <div class="navbar__right">
-            <div class="navbar__toggle">
-              <input id="navbar__checkbox" type="checkbox" />
-              <label class="navbar__checkbox-label" for="navbar__checkbox">
+            <div class="toggle">
+              <input id="toggle__checkbox" type="checkbox" />
+              <label class="toggle__checkbox-label" for="toggle__checkbox">
                 <svg
                   class="sun"
                   width="26"
@@ -167,7 +172,7 @@
               </label>
             </div>
 
-            <figure class="navbar__images">
+            <figure class="navbar__right-images">
               <img
                 class="search img-filter--dark"
                 src="./images/icons/Search.png"
@@ -183,7 +188,8 @@
           </div>
         </div>
       </nav>
-      <div class="search-container">
+      <!-- search-sm -->
+      <div class="search-container--sm">
         <label class="search-label" for="searchId">
           <svg
             width="22"
@@ -257,7 +263,7 @@
             pharetra, phasellus imperdiet fringilla turpis lectus risus erat.
             Commodo purus, eu sed suspendisse fermentum
           </p>
-          <div class="main__buttons">
+          <div class="">
             <button type="button " class="btn btn__primary">Shop now</button>
             <button type="button " class="btn btn__secondary">
               <div>
@@ -273,19 +279,24 @@
         </figure>
       </div>
       <div class="main__footer">
+        <!-- arrow img -->
         <figure class="main-section__left">
           <img class="img-filter--dark" src="./images/icons/Scrl down.png" />
         </figure>
+        <!-- main-card -->
         <div class="main-section__right">
           <div class="main__card">
             <figure class="main__card-img-wrapper">
               <img src="./images/utils/Headphone-red.png" class="card-img" />
             </figure>
             <div class="main__card-section">
+              <!-- card title -->
               <h2 class="main__card-title">Wireless Headphones</h2>
-              <div class="">
-                <span class="main__card--active">$120</span>
-                <span class="main__card--inactive">$185</span>
+              <!-- card price -->
+
+              <div>
+                <span class="card--active">$120</span>
+                <span class="card--inactive">$185</span>
               </div>
             </div>
           </div>
@@ -295,9 +306,9 @@
             </figure>
             <div class="main__card-section">
               <h2 class="main__card-title">Wireless Headphones</h2>
-              <div class="">
-                <span class="main__card--active">$120</span>
-                <span class="main__card--inactive">$185</span>
+              <div>
+                <span class="card--active">$120</span>
+                <span class="card--inactive">$185</span>
               </div>
             </div>
           </div>
@@ -307,9 +318,9 @@
             </figure>
             <div class="main__card-section">
               <h2 class="main__card-title">Wireless Headphones</h2>
-              <div class="">
-                <span class="main__card--active">$120</span>
-                <span class="main__card--inactive">$185</span>
+              <div>
+                <span class="card--active">$120</span>
+                <span class="card--inactive">$185</span>
               </div>
             </div>
           </div>
@@ -317,9 +328,10 @@
       </div>
     </main>
     <!-- popular trends -->
-    <section class="">
+    <section>
+      <!-- header -->
       <h2 class="section-header">Popular Trends</h2>
-      <div class="card-section__row">
+      <div class="card-section-row">
         <div class="card popular popular--dark">
           <figure class="card__img-wrapper">
             <img
@@ -332,14 +344,15 @@
             <h3 class="card__header">
               Wireless Headphones with Dolby Surround Sound
             </h3>
+            <!-- card details -->
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -363,13 +376,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -393,13 +406,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -423,13 +436,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -453,13 +466,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -496,11 +509,11 @@
         </div>
       </div>
     </section>
-    <!-- exclusive offer -->
+    <!-- exclusive lg offer -->
     <section class="exclusive-section exclusive-section--lg">
       <div class="exclusive-section__left">
         <h1 class="exclusive-section__left-offer">20% off</h1>
-        <figure class="exclusive-section__left__img-wrapper">
+        <figure class="">
           <img
             class="card-img"
             src="./images/utils/Headphone-round.png"
@@ -528,7 +541,7 @@
             </div>
           </div>
         </div>
-        <div class="main__buttons">
+        <div class="">
           <button class="btn btn__secondary btn__small">
             <div>
               <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -539,12 +552,14 @@
         </div>
       </div>
     </section>
+    <!-- exclusive sm offer -->
+
     <section class="exclusive-section exclusive-section--sm">
       <h2 class="exclusive-section__header">Exclusive Offer</h2>
 
       <div class="exclusive-section__left">
         <h1 class="exclusive-section__left-offer">20% off</h1>
-        <figure class="exclusive-section__left__img-wrapper">
+        <figure class="">
           <img
             class="card-img"
             src="./images/utils/Headphone-round.png"
@@ -571,7 +586,7 @@
             </div>
           </div>
         </div>
-        <div class="main__buttons">
+        <div class="">
           <button class="btn btn__secondary btn__small">
             <div>
               <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -606,9 +621,9 @@
       </div>
     </section>
     <!-- new arrivals -->
-    <section class="">
+    <section>
       <h2 class="section-header">New Arrivals</h2>
-      <div class="card-section__row">
+      <div class="card-section-row">
         <div class="card arrivals">
           <figure class="card__img-wrapper">
             <img
@@ -622,13 +637,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button type="button " class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -654,13 +669,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button type="button " class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -686,13 +701,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button type="button " class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -718,13 +733,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button type="button " class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />
@@ -750,13 +765,13 @@
               Wireless Headphones with Dolby Surround Sound
             </h3>
             <ul>
-              <li class="card__details__list">Truely Wireless</li>
-              <li class="card__details__list">Dolby Surround Sound</li>
-              <li class="card__details__list">13hrs of playback time</li>
-              <li class="card__details__list">Made in Germany</li>
+              <li class="card__details-list">Truely Wireless</li>
+              <li class="card__details-list">Dolby Surround Sound</li>
+              <li class="card__details-list">13hrs of playback time</li>
+              <li class="card__details-list">Made in Germany</li>
             </ul>
-            <h3 class="main__card--active">$145</h3>
-            <div class="main__buttons">
+            <h3 class="card--active">$145</h3>
+            <div class="">
               <button type="button " class="btn btn__secondary btn__small">
                 <div>
                   <img class="cart__secondary" src="./images/icons/Cart.png" />

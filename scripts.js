@@ -1,4 +1,4 @@
-const checkbox = document.getElementById("navbar__checkbox");
+const checkbox = document.getElementById("toggle__checkbox");
 checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
     document.body.classList.add("body--dark");
