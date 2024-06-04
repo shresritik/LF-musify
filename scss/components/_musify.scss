@@ -18,9 +18,12 @@
     gap: 24.02px;
     .musify__container {
       font-size: 2.25rem;
-      @include utils.flexBox(center, center);
+      @include utils.flexBox(start, center);
       gap: 1.313rem;
       padding: 1.938rem 1.938rem;
+      & > figure {
+        min-width: 34px;
+      }
     }
   }
 }

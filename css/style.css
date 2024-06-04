@@ -1,7 +1,4 @@
 @media screen and (max-width: 900px) {
-  .main__img-wrapper {
-    display: none;
-  }
   .main-section {
     position: static;
     padding: 0;
@@ -14,15 +11,13 @@
   .main-section .main__header {
     font-size: 3.5rem;
     width: 100%;
+    line-height: 55px;
   }
-  .main__desc {
+  .main-section .main__desc {
     font-size: 1.125rem;
   }
   .musify__section {
     flex-direction: column;
-  }
-  .buttons-section {
-    justify-content: center;
   }
   .card-section-row {
     padding: 3.75rem 2.5rem;
@@ -37,7 +32,6 @@
   }
   .main-section__left {
     width: 100%;
-    margin-bottom: 5rem;
   }
   .btn {
     font-size: 1.0625rem;
@@ -91,27 +85,14 @@
     width: 100%;
     color: #858585;
     outline: none;
+    box-shadow: 4px 6px 8px 0px rgba(0, 0, 0, 0.2509803922);
   }
   header {
     position: relative;
   }
-  .main__footer {
-    position: relative;
-    flex-direction: column-reverse;
-    align-items: end;
-    justify-content: center;
-  }
-  .main-section__right {
-    width: 90%;
-    padding-left: 1.69rem;
-    padding-right: 1.69rem;
-  }
-  .main__card-section {
-    border-radius: 1.5625rem;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    background: rgba(40, 40, 40, 0.7);
-    color: white;
-    backdrop-filter: blur(15px);
+  .card__img-wrapper {
+    min-width: 17.5rem;
+    height: 17.6875rem;
   }
   .musify__section {
     gap: 0px;
@@ -208,10 +189,11 @@
   .main__footer {
     position: relative;
     flex-direction: column-reverse;
-    align-items: end;
+    align-items: center;
     justify-content: center;
   }
   .buttons-section {
+    padding: 0;
     justify-content: center;
   }
   .main-section__right {
@@ -591,6 +573,7 @@
 
 .main__card-img-wrapper {
   z-index: 100;
+  width: 50%;
 }
 .main__card-img-wrapper .card-img {
   margin-bottom: -103px;
@@ -732,9 +715,6 @@
   padding: 0 5.62rem;
   position: relative;
 }
-.main-section__left {
-  margin-bottom: 2rem;
-}
 .main-section .main__header {
   font-size: 5.313rem;
   font-weight: 700;
@@ -755,7 +735,7 @@
   bottom: 0.5rem;
   display: flex;
   justify-content: space-around;
-  align-items: end;
+  align-items: center;
 }
 .main__footer .main-section__right {
   display: flex;
@@ -778,6 +758,11 @@
 
 .main-section__left {
   width: 50%;
+}
+
+.main-section__left-img-wrapper {
+  width: 50%;
+  text-align: center;
 }
 
 .main {
@@ -920,10 +905,13 @@
 .musify .musify__section .musify__container {
   font-size: 2.25rem;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1.313rem;
   padding: 1.938rem 1.938rem;
+}
+.musify .musify__section .musify__container > figure {
+  min-width: 34px;
 }
 
 .scan-section {
@@ -1048,9 +1036,6 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
-  .main__img-wrapper {
-    display: none;
-  }
   .main-section {
     position: static;
     padding: 0;
@@ -1063,15 +1048,13 @@ h1 {
   .main-section .main__header {
     font-size: 3.5rem;
     width: 100%;
+    line-height: 55px;
   }
-  .main__desc {
+  .main-section .main__desc {
     font-size: 1.125rem;
   }
   .musify__section {
     flex-direction: column;
-  }
-  .buttons-section {
-    justify-content: center;
   }
   .card-section-row {
     padding: 3.75rem 2.5rem;
@@ -1086,7 +1069,6 @@ h1 {
   }
   .main-section__left {
     width: 100%;
-    margin-bottom: 5rem;
   }
   .btn {
     font-size: 1.0625rem;
@@ -1140,27 +1122,14 @@ h1 {
     width: 100%;
     color: #858585;
     outline: none;
+    box-shadow: 4px 6px 8px 0px rgba(0, 0, 0, 0.2509803922);
   }
   header {
     position: relative;
   }
-  .main__footer {
-    position: relative;
-    flex-direction: column-reverse;
-    align-items: end;
-    justify-content: center;
-  }
-  .main-section__right {
-    width: 90%;
-    padding-left: 1.69rem;
-    padding-right: 1.69rem;
-  }
-  .main__card-section {
-    border-radius: 1.5625rem;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    background: rgba(40, 40, 40, 0.7);
-    color: white;
-    backdrop-filter: blur(15px);
+  .card__img-wrapper {
+    min-width: 17.5rem;
+    height: 17.6875rem;
   }
   .musify__section {
     gap: 0px;
@@ -1257,10 +1226,11 @@ h1 {
   .main__footer {
     position: relative;
     flex-direction: column-reverse;
-    align-items: end;
+    align-items: center;
     justify-content: center;
   }
   .buttons-section {
+    padding: 0;
     justify-content: center;
   }
   .main-section__right {

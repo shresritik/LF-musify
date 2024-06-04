@@ -1,7 +1,7 @@
 @media screen and (max-width: 900px) {
-  .main__img-wrapper {
-    display: none;
-  }
+  // .main__img-wrapper {
+  //   display: none;
+  // }
   .main-section {
     position: static;
     padding: 0;
@@ -14,20 +14,20 @@
     .main__header {
       font-size: 3.5rem;
       width: 100%;
+      line-height: 55px;
     }
-  }
-
-  .main__desc {
-    font-size: 1.125rem;
+    .main__desc {
+      font-size: 1.125rem;
+    }
   }
 
   .musify__section {
     flex-direction: column;
   }
 
-  .buttons-section {
-    justify-content: center;
-  }
+  // .buttons-section {
+  //   justify-content: center;
+  // }
   .card-section-row {
     padding: 3.75rem 2.5rem;
     gap: 1.87rem;
@@ -43,7 +43,7 @@
   }
   .main-section__left {
     width: 100%;
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
   }
   .btn {
     font-size: 1.0625rem;
@@ -81,6 +81,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+
     padding: 0.5rem 0.8rem;
     & > .search-label {
       position: absolute;
@@ -98,30 +99,30 @@
     width: 100%;
     color: #858585;
     outline: none;
+    box-shadow: 4px 6px 8px 0px #00000040;
   }
   header {
     position: relative;
   }
 
-  .main__footer {
-    position: relative;
-    flex-direction: column-reverse;
-    align-items: end;
-    justify-content: center;
-  }
+  // .main__footer {
+  //   position: relative;
+  //   flex-direction: column-reverse;
+  //   align-items: end;
+  //   justify-content: center;
+  // }
 
-  .main-section__right {
-    width: 90%;
-    padding-left: 1.69rem;
-    padding-right: 1.69rem;
-  }
-  .main__card-section {
-    border-radius: 1.5625rem;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+  // .main__card-section {
+  //   border-radius: 1.5625rem;
+  //   border: 1px solid rgba(0, 0, 0, 0.12);
 
-    background: rgba(40, 40, 40, 0.7);
-    color: white;
-    backdrop-filter: blur(15px);
+  //   background: rgba(40, 40, 40, 0.7);
+  //   color: white;
+  //   backdrop-filter: blur(15px);
+  // }
+  .card__img-wrapper {
+    min-width: 17.5rem;
+    height: 17.6875rem;
   }
   .musify {
     &__section {
@@ -224,10 +225,11 @@
   .main__footer {
     position: relative;
     flex-direction: column-reverse;
-    align-items: end;
+    align-items: center;
     justify-content: center;
   }
   .buttons-section {
+    padding: 0;
     justify-content: center;
   }
   .main-section__right {
