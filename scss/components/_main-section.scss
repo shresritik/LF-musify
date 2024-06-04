@@ -1,62 +1,60 @@
-.main__header-span {
-  color: $primary_color;
-}
-
-.main-section {
-  @include utils.flexBox(space-between, center);
-  top: -60px;
-  width: 100%;
-  padding: 0 5.62rem;
-  position: relative;
-  // &__left {
-  //   margin-bottom: 2rem;
-  // }
-  & .main__header {
-    font-size: 5.313rem;
-    font-weight: 700;
-    width: 90%;
-    line-height: 70px;
-  }
-  & .main__desc {
-    font-size: 2rem;
-    color: #282828;
-    font-weight: 250;
-    width: 100%;
-    margin: 20px 0;
-  }
-}
-
-.main__footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0.5rem;
-  // padding: 0 3.5rem;
-  @include utils.flexBox(space-around, center);
-  & .main-section__right {
-    @include utils.flexBox(start, start);
-    gap: 2.5rem;
-    overflow: auto;
-    padding: 20px;
-  }
-}
-.main__img-wrapper {
-  /* position: relative; */
-  position: relative;
-  z-index: -99;
-
-  & > img {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-.main-section__left {
-  // padding-left: 5.062rem;
-  width: 50%;
-}
-.main-section__left-img-wrapper {
-  width: 50%;
-  text-align: center;
-}
 .main {
   position: relative;
+  &__header-span {
+    color: $primary_color;
+  }
+  &-section {
+    @include utils.flexBox(space-between, center);
+    top: -60px;
+    width: 100%;
+    padding: 0 5.62rem;
+    position: relative;
+    // &__left {
+    //   margin-bottom: 2rem;
+    // }
+    .main__header {
+      font-size: 5.313rem;
+      font-weight: 700;
+      width: 90%;
+      line-height: 70px;
+    }
+    .main__desc {
+      font-size: 2rem;
+      color: #282828;
+      font-weight: 250;
+      width: 100%;
+      margin: 20px 0;
+    }
+    &__left {
+      // padding-left: 5.062rem;
+      width: 50%;
+      &-img-wrapper {
+        width: 50%;
+        text-align: center;
+      }
+    }
+  }
+  &__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0.5rem;
+    // padding: 0 3.5rem;
+    @include utils.flexBox(space-around, center);
+    .main-section__right {
+      @include utils.flexBox(start, start);
+      gap: 2.5rem;
+      overflow: auto;
+      padding: 20px;
+    }
+  }
+  &__img-wrapper {
+    /* position: relative; */
+    position: relative;
+    z-index: -99;
+
+    & > .main__header-span {
+      width: 50%;
+      object-fit: cover;
+    }
+  }
 }

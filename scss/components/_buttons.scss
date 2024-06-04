@@ -17,12 +17,14 @@
   cursor: pointer;
   @include utils.flexBox(center, center);
   gap: 10px;
+  &:hover {
+    transform: scale(105%);
+  }
 }
 
 .buttons-section {
   @include utils.flexBox(start, center);
   gap: 10px;
-  padding-top: 20px;
 }
 .btn__small {
   font-size: 1rem;

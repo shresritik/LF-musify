@@ -1,7 +1,4 @@
 @media screen and (max-width: 900px) {
-  // .main__img-wrapper {
-  //   display: none;
-  // }
   .main-section {
     position: static;
     padding: 0;
@@ -19,15 +16,15 @@
     .main__desc {
       font-size: 1.125rem;
     }
+    &__left {
+      width: 100%;
+    }
   }
 
   .musify__section {
     flex-direction: column;
   }
 
-  // .buttons-section {
-  //   justify-content: center;
-  // }
   .card-section-row {
     padding: 3.75rem 2.5rem;
     gap: 1.87rem;
@@ -38,13 +35,10 @@
 
     font-size: 3.5rem;
     width: 100%;
-    line-height: 3.75rem; /* 107.143% */
+    line-height: 3.75rem;
     letter-spacing: 0.14rem;
   }
-  .main-section__left {
-    width: 100%;
-    // margin-bottom: 5rem;
-  }
+
   .btn {
     font-size: 1.0625rem;
   }
@@ -54,26 +48,24 @@
     display: none;
   }
 
-  .navbar__burger {
-    display: block;
-    width: 23%;
-  }
-  .navbar__space {
-    width: auto;
-  }
   .navbar {
     padding: 1.25rem;
     &__toggle {
       margin-right: 0;
+    }
+    &__burger {
+      display: block;
+      width: 23%;
+    }
+    &__space {
+      width: auto;
     }
   }
   .scan-section {
     flex-direction: column;
     padding: 2rem 0rem;
   }
-  .exclusive-section {
-    flex-direction: column;
-  }
+
   .search-container--sm {
     position: absolute;
     bottom: -15px;
@@ -88,9 +80,64 @@
       left: 20px;
     }
   }
-  .footer__top-sm {
-    display: block;
+
+  .footer {
+    padding: 1rem 1.2rem;
+    width: 100%;
+    &__top-sm {
+      display: block;
+    }
+    &__input {
+      font-size: 1rem;
+    }
+    &__header:last-child {
+      width: 100%;
+      text-align: center;
+    }
+    &__img > .footer__img-img {
+      width: 100%;
+    }
+    flex-direction: column;
+    &__content {
+      margin-bottom: 2.25rem;
+    }
+    &__header,
+    &__desc {
+      font-size: 1.5rem;
+    }
+    &__top {
+      flex-direction: column;
+    }
+    &__left {
+      flex-direction: column;
+      &-top {
+        flex-direction: column;
+      }
+    }
+    &__newsletter {
+      flex-direction: column;
+      &-form {
+        flex-direction: column;
+      }
+    }
+    &__right {
+      align-items: start;
+    }
+    &--sm &__header {
+      margin-bottom: 30px;
+    }
+    &--lg {
+      display: none;
+    }
+    &--sm {
+      display: flex;
+      gap: 3.38rem;
+    }
   }
+  .country {
+    width: 100%;
+  }
+
   .search-field {
     border-radius: 1.875rem;
     border: 2px solid #e5e5e5;
@@ -105,21 +152,6 @@
     position: relative;
   }
 
-  // .main__footer {
-  //   position: relative;
-  //   flex-direction: column-reverse;
-  //   align-items: end;
-  //   justify-content: center;
-  // }
-
-  // .main__card-section {
-  //   border-radius: 1.5625rem;
-  //   border: 1px solid rgba(0, 0, 0, 0.12);
-
-  //   background: rgba(40, 40, 40, 0.7);
-  //   color: white;
-  //   backdrop-filter: blur(15px);
-  // }
   .card__img-wrapper {
     min-width: 17.5rem;
     height: 17.6875rem;
@@ -134,73 +166,91 @@
     &__container {
       width: 60%;
       padding: 0.938rem 1.938rem !important;
-      & > p {
+    }
+    &__list {
+      width: 100%;
+      font-size: 1.25rem;
+    }
+  }
+  .scan-section {
+    &__right {
+      padding: 2.5rem;
+      text-align: center;
+    }
+    &__btns {
+      flex-direction: column;
+      gap: 0px;
+    }
+    &__header {
+      font-size: 1.75rem;
+    }
+    &__desc {
+      font-size: 1.625rem;
+    }
+    &__qr-img {
+      margin: auto;
+      width: 12rem;
+      .qr-image {
         width: 100%;
-        font-size: 1.25rem;
       }
     }
   }
-  .exclusive-section__left {
-    flex-direction: column-reverse;
-    width: 70%;
-    &-offer {
-      width: 7rem;
-      height: 7rem;
-      padding: 19px;
-    }
-  }
-  .accessories-section__products {
-    width: 87%;
-  }
 
-  .scan-section__right {
-    padding: 2.5rem;
-    text-align: center;
-  }
-  .scan-section__btns {
-    flex-direction: column;
-    gap: 0px;
-  }
-
-  .scan-section__header {
-    font-size: 1.75rem;
-  }
-  .scan-section__desc {
-    font-size: 1.625rem;
-  }
   .section-header {
     font-size: 2.875rem;
   }
   .accessories-section {
     margin-top: 4.7rem;
-  }
-  .accessories-section__header {
-    font-size: 2rem;
-    margin-bottom: 2.69rem;
-  }
-  .exclusive-section__header {
-    font-size: 2.75rem;
-  }
-  .exclusive-section--lg {
-    display: none;
-  }
-  .exclusive-section--sm {
-    display: flex;
-    gap: 3.38rem;
-  }
-  .exclusive-section__content {
-    padding: 0rem 0 0 0;
-  }
-  .exclusive-section__left-offer {
-    font-size: 1.87rem;
-  }
-
-  .scan-section__qr-img {
-    margin: auto;
-    width: 12rem;
-    & > img {
-      width: 100%;
+    &__header {
+      font-size: 2rem;
+      margin-bottom: 2.69rem;
     }
+    &__products {
+      width: 87%;
+    }
+  }
+  .exclusive-section {
+    flex-direction: column;
+
+    &__header {
+      font-size: 2.75rem;
+    }
+    &__content {
+      padding: 0rem 0 0 0;
+    }
+    &--lg {
+      display: none;
+    }
+    &--sm {
+      display: flex;
+      gap: 3.38rem;
+    }
+    &__left {
+      flex-direction: column-reverse;
+      width: 70%;
+      &-offer {
+        width: 7rem;
+        height: 7rem;
+        padding: 19px;
+        font-size: 1.87rem;
+      }
+    }
+  }
+  .body--dark .main--dark::before {
+    content: "";
+    background-color: $blue_color;
+    filter: blur(250px);
+    position: absolute;
+    left: 0;
+    height: 56.5rem;
+    width: 100%;
+    bottom: 20px;
+    z-index: -1;
+    transition: all 0.5s ease-in;
+    color: white;
+    border-radius: 56.5rem;
+
+    filter: blur(250px);
   }
 }
 
@@ -211,9 +261,7 @@
   .accessories-section .accessories-section__img-wrapper {
     width: 29rem;
   }
-  .accessories-section__img-wrapper {
-    width: 38rem;
-  }
+
   .scan-section__right {
     margin-left: 52px;
   }
@@ -231,11 +279,6 @@
   .buttons-section {
     padding: 0;
     justify-content: center;
-  }
-  .main-section__right {
-    width: 90%;
-    padding-left: 1.69rem;
-    padding-right: 1.69rem;
   }
   .main__card-section {
     border-radius: 1.5625rem;
@@ -257,9 +300,15 @@
       padding: 20px;
       width: 100%;
     }
+    &__right {
+      width: 90%;
+      padding-left: 1.69rem;
+      padding-right: 1.69rem;
+    }
     .main__header {
       font-size: 3.5rem;
       width: 100%;
+      margin-top: 10px;
     }
   }
 

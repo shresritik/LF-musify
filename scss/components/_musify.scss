@@ -21,7 +21,7 @@
       @include utils.flexBox(start, center);
       gap: 1.313rem;
       padding: 1.938rem 1.938rem;
-      & > figure {
+      .musify__img-wrapper {
         min-width: 34px;
       }
     }

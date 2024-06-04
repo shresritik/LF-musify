@@ -61,22 +61,3 @@
     );
   }
 }
-
-@media screen and (max-width: 900px) {
-  .body--dark .main--dark::before {
-    content: "";
-    background-color: $blue_color;
-    filter: blur(250px);
-    position: absolute;
-    left: 0;
-    height: 56.5rem;
-    width: 100%;
-    bottom: 20px;
-    z-index: -1;
-    transition: all 0.5s ease-in;
-    color: white;
-    border-radius: 56.5rem;
-
-    filter: blur(250px);
-  }
-}
