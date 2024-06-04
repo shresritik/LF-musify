@@ -14,11 +14,7 @@ body {
   position: relative;
   transition: all 0.5s ease-out;
 }
-.body--dark {
-  background-color: #070606;
-  color: white;
-  transition: all 0.5s ease-in;
-}
+
 img {
   object-fit: contain;
 }
@@ -179,7 +175,7 @@ img {
 }
 
 .card--active {
-  color: #fc9918;
+  color: $yellow_color;
   font-size: 1.438rem;
   font-weight: 400;
   margin-right: 1.06rem;

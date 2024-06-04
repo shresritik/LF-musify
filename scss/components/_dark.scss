@@ -1,48 +1,65 @@
-.body--dark .navbar--dark::after {
-  content: "";
-  background: $secondary_color;
-
-  filter: blur(300px);
-  position: absolute;
-  right: 0;
-  height: 56.5rem;
-  width: 56.5rem;
-  top: 10px;
-  z-index: -10;
-  transition: all 0.5s ease-in;
-}
-.body--dark .main--dark::before {
-  content: "";
-  background-color: $blue_color;
-  filter: blur(250px);
-  position: absolute;
-  left: 0;
-  height: 56.5rem;
-  width: 56.5rem;
-  bottom: 20px;
-  z-index: 0;
-  transition: all 0.5s ease-in;
+.body--dark {
+  background-color: #070606;
   color: white;
-  border-radius: 56.5rem;
+  transition: all 0.5s ease-in;
+  .navbar--dark::after {
+    content: "";
+    background: $secondary_color;
 
-  filter: blur(250px);
-}
-.body--dark .text-color--dark {
-  position: relative;
-  color: white !important;
-  z-index: 1000;
-}
+    filter: blur(300px);
+    position: absolute;
+    right: 0;
+    height: 56.5rem;
+    width: 56.5rem;
+    top: 10px;
+    z-index: -10;
+    transition: all 0.5s ease-in;
+  }
+  .navbar--dark::after {
+    content: "";
+    background: $secondary_color;
 
-.body--dark .img-filter--dark {
-  filter: invert(100%) sepia(97%) saturate(13%) hue-rotate(237deg)
-    brightness(104%) contrast(104%);
-}
-.body--dark .popular--dark {
-  background: linear-gradient(
-    164deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.1) 100.82%
-  );
+    filter: blur(300px);
+    position: absolute;
+    right: 0;
+    height: 56.5rem;
+    width: 56.5rem;
+    top: 10px;
+    z-index: -10;
+    transition: all 0.5s ease-in;
+  }
+  .main--dark::before {
+    content: "";
+    background-color: $blue_color;
+    filter: blur(250px);
+    position: absolute;
+    left: 0;
+    height: 56.5rem;
+    width: 56.5rem;
+    bottom: 20px;
+    z-index: 0;
+    transition: all 0.5s ease-in;
+    color: white;
+    border-radius: 56.5rem;
+
+    filter: blur(250px);
+  }
+  .text-color--dark {
+    position: relative;
+    color: white !important;
+    z-index: 1000;
+  }
+  .img-filter--dark {
+    filter: invert(100%) sepia(97%) saturate(13%) hue-rotate(237deg)
+      brightness(104%) contrast(104%);
+  }
+  .popular--dark {
+    background: linear-gradient(
+      164deg,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0.1) 100.82%
+    );
+  }
 }
 
 @media screen and (max-width: 900px) {
