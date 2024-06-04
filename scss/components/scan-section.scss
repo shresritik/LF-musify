@@ -1,0 +1,29 @@
+.scan-section {
+  padding: 5rem 3rem;
+  @include utils.flexBox(space-around, center);
+  &__right {
+    @include utils.flexBox(center, center);
+    flex-direction: column;
+    gap: 15px;
+    flex: 0.8;
+  }
+}
+.scan-section__header {
+  font-size: 3.5rem;
+}
+.scan-section__desc {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.scan-section__btns {
+  height: max-content;
+  @include utils.flexBox(center, center);
+  gap: 21px;
+}
+.scan-section__qr-img {
+  margin: auto;
+  flex: 0.3;
+  & > img {
+    width: 100%;
+  }
+}

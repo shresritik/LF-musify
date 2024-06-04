@@ -1,0 +1,28 @@
+.cart--secondary {
+  width: 20px;
+  filter: invert(29%) sepia(87%) saturate(1903%) hue-rotate(356deg)
+    brightness(101%) contrast(89%);
+}
+
+.section {
+  padding: 4.875rem 0rem 7.875rem 4.875rem;
+  width: 100%;
+  &-header {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 4.875rem;
+  }
+}
+
+.popular {
+  background: #282828;
+
+  width: 23.6rem;
+}
+
+.search-container--sm,
+.footer__top-sm {
+  width: 100%;
+  display: none;
+}

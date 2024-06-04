@@ -1,0 +1,26 @@
+.musify {
+  width: 80%;
+  margin: auto;
+  margin-top: 6.06rem;
+  margin-bottom: 6.06rem;
+  color: white;
+  background: linear-gradient(91.42deg, $secondary_color 0%, $blue_color 100%);
+  border-radius: 25px;
+  &__header {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.875rem;
+    font-size: 2.813rem;
+  }
+
+  .musify__section {
+    @include utils.flexBox(space-around, center);
+    gap: 24.02px;
+    .musify__container {
+      font-size: 2.25rem;
+      @include utils.flexBox(center, center);
+      gap: 1.313rem;
+      padding: 1.938rem 1.938rem;
+    }
+  }
+}
