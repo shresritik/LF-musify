@@ -1,25 +1,11 @@
-@use "config/utils";
-@import "config/config";
-@import "config/base";
+@use "mixins/mixins" as utils;
+@import "variables/variables";
 @import "components/buttons";
 @import "components/dark";
 @import "components/toggle";
 @import "components/footer";
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body {
-  position: relative;
-  transition: all 0.5s ease-out;
-}
-
-img {
-  object-fit: contain;
-}
-
+@import "base/base";
+@import "base/fonts";
 .navbar__logo-wrapper {
   width: 8rem;
   & > .navbar__logo {
@@ -166,9 +152,6 @@ img {
 .main__card {
   @include utils.flexBox(center, center);
   flex-direction: column;
-}
-img {
-  object-fit: contain;
 }
 
 .card-img {
@@ -403,6 +386,8 @@ img {
   .main-section {
     position: static;
     padding: 0;
+    text-align: center;
+
     &__left {
       text-align: center;
       padding: 20px;
@@ -420,9 +405,7 @@ img {
   .musify__section {
     flex-direction: column;
   }
-  .main-section {
-    text-align: center;
-  }
+
   .buttons-section {
     justify-content: center;
   }
@@ -497,22 +480,14 @@ img {
   header {
     position: relative;
   }
-  // .search-label {
-  //   position: absolute;
-  //   left: 15px;
-  //   top: 8px;
-  // }
+
   .main__footer {
     position: relative;
     flex-direction: column-reverse;
     align-items: end;
     justify-content: center;
   }
-  // .main-section__left {
-  //   // padding-left: 2rem;
-  //   position: relative;
-  //   top: 3.5rem;
-  // }
+
   .main-section__right {
     width: 90%;
     padding-left: 1.69rem;
@@ -621,5 +596,50 @@ img {
   }
   .main-section {
     position: static;
+  }
+}
+@media (max-width: 1300px) {
+  .main__footer {
+    position: relative;
+    flex-direction: column-reverse;
+    align-items: end;
+    justify-content: center;
+  }
+  .buttons-section {
+    justify-content: center;
+  }
+  .main-section__right {
+    width: 90%;
+    padding-left: 1.69rem;
+    padding-right: 1.69rem;
+  }
+  .main__card-section {
+    border-radius: 1.5625rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    background: rgba(40, 40, 40, 0.7);
+    color: white;
+    backdrop-filter: blur(15px);
+  }
+  .main__img-wrapper {
+    display: none;
+  }
+  .main-section {
+    text-align: center;
+    position: static;
+    padding: 0;
+    &__left {
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+    .main__header {
+      font-size: 3.5rem;
+      width: 100%;
+    }
+  }
+
+  .main__desc {
+    font-size: 1.125rem;
   }
 }

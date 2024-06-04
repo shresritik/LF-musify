@@ -37,7 +37,7 @@
     height: 56.5rem;
     width: 56.5rem;
     bottom: 20px;
-    z-index: 0;
+    z-index: -1;
     transition: all 0.5s ease-in;
     color: white;
     border-radius: 56.5rem;
@@ -72,7 +72,7 @@
     height: 56.5rem;
     width: 100%;
     bottom: 20px;
-    z-index: 0;
+    z-index: -1;
     transition: all 0.5s ease-in;
     color: white;
     border-radius: 56.5rem;
