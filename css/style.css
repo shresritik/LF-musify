@@ -71,58 +71,6 @@
     position: absolute;
     left: 20px;
   }
-  .footer {
-    padding: 1rem 1.2rem;
-    width: 100%;
-    flex-direction: column;
-  }
-  .footer__top-sm {
-    display: block;
-  }
-  .footer__input {
-    font-size: 1rem;
-  }
-  .footer__header:last-child {
-    width: 100%;
-    text-align: center;
-  }
-  .footer__img > .footer__img-img {
-    width: 100%;
-  }
-  .footer__content {
-    margin-bottom: 2.25rem;
-  }
-  .footer__header, .footer__desc {
-    font-size: 1.5rem;
-  }
-  .footer__top {
-    flex-direction: column;
-  }
-  .footer__left {
-    flex-direction: column;
-  }
-  .footer__left-top {
-    flex-direction: column;
-  }
-  .footer__newsletter {
-    flex-direction: column;
-  }
-  .footer__newsletter-form {
-    flex-direction: column;
-  }
-  .footer__right {
-    align-items: start;
-  }
-  .footer--sm .footer__header {
-    margin-bottom: 30px;
-  }
-  .footer--lg {
-    display: none;
-  }
-  .footer--sm {
-    display: flex;
-    gap: 3.38rem;
-  }
   .country {
     width: 100%;
   }
@@ -290,6 +238,58 @@
   }
   .main__desc {
     font-size: 1.125rem;
+  }
+  .footer {
+    padding: 1rem 1.2rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer__top-sm {
+    display: block;
+  }
+  .footer__input {
+    font-size: 1rem;
+  }
+  .footer__header:last-child {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__img > .footer__img-img {
+    width: 100%;
+  }
+  .footer__content {
+    margin-bottom: 2.25rem;
+  }
+  .footer__header, .footer__desc {
+    font-size: 1.5rem;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__left {
+    flex-direction: column;
+  }
+  .footer__left-top {
+    flex-direction: column;
+  }
+  .footer__newsletter {
+    flex-direction: column;
+  }
+  .footer__newsletter-form {
+    flex-direction: column;
+  }
+  .footer__right {
+    align-items: start;
+  }
+  .footer--sm .footer__header {
+    margin-bottom: 30px;
+  }
+  .footer--lg {
+    display: none;
+  }
+  .footer--sm {
+    display: flex;
+    gap: 3.38rem;
   }
 }
 .btn__primary {
@@ -1084,58 +1084,6 @@ h1 {
     position: absolute;
     left: 20px;
   }
-  .footer {
-    padding: 1rem 1.2rem;
-    width: 100%;
-    flex-direction: column;
-  }
-  .footer__top-sm {
-    display: block;
-  }
-  .footer__input {
-    font-size: 1rem;
-  }
-  .footer__header:last-child {
-    width: 100%;
-    text-align: center;
-  }
-  .footer__img > .footer__img-img {
-    width: 100%;
-  }
-  .footer__content {
-    margin-bottom: 2.25rem;
-  }
-  .footer__header, .footer__desc {
-    font-size: 1.5rem;
-  }
-  .footer__top {
-    flex-direction: column;
-  }
-  .footer__left {
-    flex-direction: column;
-  }
-  .footer__left-top {
-    flex-direction: column;
-  }
-  .footer__newsletter {
-    flex-direction: column;
-  }
-  .footer__newsletter-form {
-    flex-direction: column;
-  }
-  .footer__right {
-    align-items: start;
-  }
-  .footer--sm .footer__header {
-    margin-bottom: 30px;
-  }
-  .footer--lg {
-    display: none;
-  }
-  .footer--sm {
-    display: flex;
-    gap: 3.38rem;
-  }
   .country {
     width: 100%;
   }
@@ -1303,6 +1251,58 @@ h1 {
   }
   .main__desc {
     font-size: 1.125rem;
+  }
+  .footer {
+    padding: 1rem 1.2rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer__top-sm {
+    display: block;
+  }
+  .footer__input {
+    font-size: 1rem;
+  }
+  .footer__header:last-child {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__img > .footer__img-img {
+    width: 100%;
+  }
+  .footer__content {
+    margin-bottom: 2.25rem;
+  }
+  .footer__header, .footer__desc {
+    font-size: 1.5rem;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__left {
+    flex-direction: column;
+  }
+  .footer__left-top {
+    flex-direction: column;
+  }
+  .footer__newsletter {
+    flex-direction: column;
+  }
+  .footer__newsletter-form {
+    flex-direction: column;
+  }
+  .footer__right {
+    align-items: start;
+  }
+  .footer--sm .footer__header {
+    margin-bottom: 30px;
+  }
+  .footer--lg {
+    display: none;
+  }
+  .footer--sm {
+    display: flex;
+    gap: 3.38rem;
   }
 }
 
